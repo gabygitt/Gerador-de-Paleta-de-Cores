@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColorPalette Studio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>ColorPalette Studio</h1>
+  <button id="themeToggle" class="theme-btn">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+</header>
+
+<main>
+
+  <section class="controls">
+    <div class="control-group">
+      <label>Número de cores:</label>
+      <select id="colorCount">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <label>Estilo:</label>
+      <select id="colorStyle">
+        <option value="random">Aleatórias</option>
+        <option value="analogous">Análogas</option>
+    </select>
+    </div>
+
+    <div class="buttons">
+      <button id="generateBtn">
+        <i class="fa-solid fa-rotate"></i> Gerar
+      </button>
+    </div>
+
+    <div class="save-area">
+      <input type="text" id="paletteName" placeholder="Nome da paleta">
+      <button id="saveBtn">
+        <i class="fa-solid fa-floppy-disk"></i> Salvar
+      </button>
+    </div>
+  </section>
+
+  <section class="palette" id="palette"></section>
+
+  <section class="saved">
+    <h2>Paletas Salvas</h2>
+    <div id="savedList"></div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-container">
+    
+    <div class="footer-about">
+      <h3>ColorPalette Studio</h3>
+      <p>
+        Gere, personalize e salve paletas de cores incríveis para seus projetos.
+        Ideal para designers, desenvolvedores e criadores que buscam harmonia
+        e praticidade na escolha de cores!
+      </p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Redes Sociais</h4>
+      <div class="social-icons">
+        <a href="https://github.com/gabygitt" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a> 
+
+        <a href="https://www.linkedin.com/in/gabriella-inocencio-672b7936a/" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>        
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 ColorPalette Studio — Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+
+<script src="backend/script.js"></script>
+</body>
+</html>
